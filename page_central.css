@@ -1,7 +1,37 @@
-body{
-
+div{
+    display: flex;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 h1{
     width: 100%;
     border: solid;
@@ -9,17 +39,17 @@ h1{
 
 }
 
-#container_left{
+#container_button{
     width: 100%;
     border: dashed green;
     text-align: center;
 }
 
-#container_left div{
+#container_button div{
     margin: 2% 40% 2% 40%;
 }
 
-#container_left .buton {
+#container_button .buton {
     width: 100%;
     position: relative;
     padding: 10px 20px;
@@ -28,7 +58,7 @@ h1{
     letter-spacing: 4px
   }
 
-  #container_left .buton:hover {
+  #container_button .buton:hover {
     border: none;
     background: #03e9f4;
     color: #ffffff;
@@ -38,3 +68,4 @@ h1{
                 0 0 50px #03e9f4,
                 0 0 100px #03e9f4;
   }
+  */

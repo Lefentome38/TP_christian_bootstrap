@@ -1,13 +1,12 @@
-html{
-    overflow: scroll;
-}
+html{}
 
 body{
-    border: solid;
+    overflow: auto;
 }
 
 
-#container_left{
+#container_left, .row{
+    width: 100%;
     display: flex;
 }
 

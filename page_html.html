@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap-demo-html</title>
+    <link rel="stylesheet" href="page_central.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">navigation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">lien</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                liste d'aide
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">guide</a></li>
+                <li><a class="dropdown-item" href="#">exercice</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">documentation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+<div id="container_left">
+
+  <div class="row">
+    <div class="col-1">
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">html</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">head</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">body</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">div</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-5">style</a>
+      </div>
+    </div>
+    <div class="col-9">
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+
+
+      <article>
+        <h4 id="list-item-1">html</h4>
+        <p>HTML signifie « HyperText Markup Language » qu'on peut traduire par « langage de balises pour l'hypertexte ». Il est utilisé afin de créer et de représenter le contenu d'une page web et sa structure. D'autres technologies sont utilisées avec HTML pour décrire la présentation d'une page (CSS) et/ou ses fonctionnalités interactives (JavaScript).</p>
+        <p>L'« hypertexte » désigne les liens qui relient les pages web entre elles, que ce soit au sein d'un même site web ou entre différents sites web. Les liens sont un aspect fondamental du Web. Ce sont eux qui forment cette « toile » (ce mot est traduit par web en anglais). En téléchargeant du contenu sur l'Internet et en le reliant à des pages créées par d'autres personnes, vous devenez un participant actif du World Wide Web.</p>
+      
+        <h5>Introduction au HTML</h5>
+        <p>Vous faites vos premiers pas dans le développement web ? Nos articles sur les bases de HTML expliquent ce qu'est HTML et comment l'utiliser.</p>
+          
+        <h5>Tutoriels HTML</h5>
+        <p>Pour plus d'informations sur l'utilisation du HTML, des tutoriels et des exemples complets, vous pouvez consulter notre article HTML.</p>
+          
+        <h5>Référence HTML</h5>
+        <p>Dans notre référence exhaustive, vous trouverez le détail de chaque élément et attribut constituant HTML.</p>
+        
+        <p>lien :<a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">article_html</a></p>
+      </article>
+
+      <article>
+        <h4 id="list-item-2">head</h4>
+        <p>L'élément HTML &lt;head&gt; fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.L'élément HTML <head> fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.</p>
+        <h5>Attributs</h5>
+        <p>Comme tous les éléments HTML, cet élément prend en charge les attributs universels.</p>
+
+        <h5>exemple</h5>
+        <pre>
+          <code>
+            <html>
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;/html&gt;
+          </code>
+        </pre>
+        <p>lien :<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/head" target="_blank">article_head</a></p>
+      </article>
+
+      <article>
+        <h4 id="list-item-3">body</h4>
+        <p>L'élément HTML &lt;body&gt; représente le contenu principal du document HTML. Il ne peut y avoir qu'un élément &lt;body&gt; par document.</p>
+        
+        <h5>h1,h2,h3...</h5>
+        <p>Les éléments HTML &lt;h1&gt; à &lt;h6&gt; représentent les six niveaux de titre de section. &lt;h1&gt; correspond au niveau de section le plus haut et &lt;h6&gt; correspond au niveau le plus faible.</p>
+        <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Heading_Elements" target="_blank">h1,h2,h3...</a></p>
+
+        <h5>section</h5>
+        <p>L'élément HTML &lt;section&gt; représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.</p>
+        <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/section" target="_blank">section</a></p>
+        
+        <h5>article</h5>
+        <p>L'élément &lt;article&gt; représente une composition autonome dans un document, une page, une application ou un site, destinée à être distribuée ou réutilisée de manière indépendante (par exemple, dans le cadre d'une syndication). Exemples : un message de forum, un article de magazine ou de journal, ou un article de blog, une fiche produit, un commentaire soumis par un utilisateur, un widget ou gadget interactif, ou tout autre élément de contenu indépendant.</p>
+        <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/article" target="_blank">article</a></p>
+
+        <h5>menu</h5>
+        <p>L'élément HTML &lt;menu&gt; est une alternative sémantique à &lt;ul&gt;, mais est traité par les navigateurs, et en termes d'accessibilité comme un élément &lt;ul&gt;. Il représente une liste d'éléments non-ordonnée (chaque élément de la liste étant représenté par un élément &lt;li>&gt;).</p>
+        <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/menu" target="_blank">menu</a></p>
+
+        <h5>nav</h5>
+        <p>L'élément HTML &lt;nav&gt; représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée à la navigation dans un document (avec des menus, des tables des matières, des index, etc.).</p>
+        <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav" target="_blank">nav</a></p>
+
+        <h5>a</h5>
+        <p>L'élément HTML &lt;a&gt; (pour ancre ou anchor en anglais), avec son attribut href, crée un lien hypertexte vers des pages web, des fichiers, des adresses e-mail, des emplacements se trouvant dans la même page, ou tout ce qu'une URL peut adresser. Le contenu de chaque élément &lt;a&gt; doit indiquer la destination du lien. Si l'attribut href est présent, appuyer sur la touche entrée en se concentrant sur l'élément &lt;a&gt; l'activera.</p>
+        <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/a" target="_blank">a</a></p>
+
+        <p>lien :<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/body" target="_blank">article_body</a></p>
+      </article>
+
+      <article>
+        <h4 id="list-item-4">div</h4>
+        <p>L'élément HTML &lt;div&gt; (ou division) est le conteneur générique du contenu du flux. Il n'a aucun effet sur le contenu ou la mise en page tant qu'il n'est pas mis en forme d'une manière quelconque à l'aide de CSS.</p>
+        <p>lien :<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/div">article_div</a></p>
+      </article>
+
+      <article>
+        <h4 id="list-item-5">style</h4>
+        <p>CSS est l'un des langages principaux du Web ouvert et a été standardisé par le W3C. Ce standard évolue sous forme de niveaux (levels), CSS1 est désormais considéré comme obsolète, CSS2.1 correspond à la recommandation et CSS3, qui est découpé en modules plus petits, est en voie de standardisation.</p>
+        <p>lien :<a href="https://developer.mozilla.org/fr/docs/Web/CSS">article_style</a></p>
+      </article>
+      
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+<!--
+    <section id="container_button">
+        <h1>Hello, world!</h1>
+        <div>
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input" target="_blank">
+                <button class="buton" type="button">
+                    test
+                </button>
+            </a>
+        </div>
+    </section>
+-->

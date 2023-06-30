@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap-demo-css</title>
-    <link rel="stylesheet" href="page_central.css">
+    <link rel="stylesheet" href="page_style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
   <body>
@@ -52,10 +52,11 @@
     <div class="col-1">
       <div id="list-example" class="list-group">
         <a class="list-group-item list-group-item-action" href="#list-item-1">css</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-2">backgrund</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-3">body</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-4">div</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-5">style</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">background</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">border</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">display</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-5">margin</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-6">padding</a>
       </div>
     </div>
     <div class="col-9">
@@ -79,67 +80,181 @@
       </article>
 
       <article>
-        <h4 id="list-item-2">head</h4>
-        <p>L'élément HTML &lt;head&gt; fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.L'élément HTML <head> fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.</p>
-        <h5>Attributs</h5>
-        <p>Comme tous les éléments HTML, cet élément prend en charge les attributs universels.</p>
-
-        <h5>exemple</h5>
+        <h4 id="list-item-2">background</h4>
+        <p>La propriété <a href="#">CSS</a>  background est une <a href="#">propriété raccourcie</a> qui permet de définir les différentes valeurs des propriétés liées à la gestion des arrière-plans d'un élément (couleur, image, origine, taille, répétition, etc.).</p>
+        <p></p>
+        <h5>example de Propriétés</h5>
         <pre>
           <code>
-            <html>
-  &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;/html&gt;
+            <ul>
+              <li><a href="#">background-color</a></li>
+              <li><a href="#">background-image</a></li>
+              <li><a href="#">background-position</a></li>
+              <li><a href="#">background-origin</a></li>
+              <li><a href="#">background-repeat</a></li>
+              <li><a href="#">background-size</a></li>
+              <li><a href="#">background-clip</a></li>
+              <li><a href="#">background-attachment</a></li>
+            </ul>
           </code>
         </pre>
-        <p>lien :<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/head" target="_blank">article_head</a></p>
+        <p>lien :<a href="#" target="_blank">article_background</a></p>
       </article>
 
       <article>
-        <h4 id="list-item-3">body</h4>
-        <p>L'élément HTML &lt;body&gt; représente le contenu principal du document HTML. Il ne peut y avoir qu'un élément &lt;body&gt; par document.</p>
+        <h4 id="list-item-3">border</h4>
+        <p>La propriété CSS <code>border</code> est <a href="#">une propriété raccourcie</a> qui permet de définir les propriétés liées à la bordure. <code>border</code> peut être utilisée pour définir les valeurs de <a href="#">border-width</a>, <a href="#">border-style</a> et <a href="#">border-color</a>.</p>
+        <h5>example css</h5>
+        <pre>
+          <code>
+            /* style */
+border: solid;
+
+/* largeur | style */
+border: 2px dotted;
+
+/* style | couleur */
+border: outset #f33;
+
+/* largeur | style | couleur */
+border: medium dashed green;
+
+/* Valeurs globales */
+border: inherit;
+border: initial;
+border: unset;
+          </code>
+        </pre>
+      </article>
+
+      <p>lien: <a href="#">article_border</a></p>
+
+      <article>
+        <h4 id="list-item-4">display</h4>
+        <p>La propriété <code>display</code> définit le type d'affichage utilisée pour le rendu d'un élément <a href="#">(de bloc ou en ligne)</a> et la disposition utilisée pour ses éléments fils : <a href="#">grille</a> ou <a href="#">boîtes flexibles</a>.</p>
         
-        <h5>h1,h2,h3...</h5>
-        <p>Les éléments HTML &lt;h1&gt; à &lt;h6&gt; représentent les six niveaux de titre de section. &lt;h1&gt; correspond au niveau de section le plus haut et &lt;h6&gt; correspond au niveau le plus faible.</p>
-        <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Heading_Elements" target="_blank">h1,h2,h3...</a></p>
-
-        <h5>section</h5>
-        <p>L'élément HTML &lt;section&gt; représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.</p>
-        <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/section" target="_blank">section</a></p>
+        <p>Le type d'affichage donné par <code>display</code> possède deux composantes : le type d'affichage extérieur qui définit comment la boîte participe au <a href="#"></a>flux et le type d'affichage intérieur qui définit l'organisation des éléments enfants.</p>
         
-        <h5>article</h5>
-        <p>L'élément &lt;article&gt; représente une composition autonome dans un document, une page, une application ou un site, destinée à être distribuée ou réutilisée de manière indépendante (par exemple, dans le cadre d'une syndication). Exemples : un message de forum, un article de magazine ou de journal, ou un article de blog, une fiche produit, un commentaire soumis par un utilisateur, un widget ou gadget interactif, ou tout autre élément de contenu indépendant.</p>
-        <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/article" target="_blank">article</a></p>
+        <p>Certaines valeurs de <code>display</code> sont définies dans des spécifications séparées. Pour plus d'informations, voir la section Spécifications ci-après.</p>
 
-        <h5>menu</h5>
-        <p>L'élément HTML &lt;menu&gt; est une alternative sémantique à &lt;ul&gt;, mais est traité par les navigateurs, et en termes d'accessibilité comme un élément &lt;ul&gt;. Il représente une liste d'éléments non-ordonnée (chaque élément de la liste étant représenté par un élément &lt;li>&gt;).</p>
-        <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/menu" target="_blank">menu</a></p>
+        <h5>example css</h5>
 
-        <h5>nav</h5>
-        <p>L'élément HTML &lt;nav&gt; représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée à la navigation dans un document (avec des menus, des tables des matières, des index, etc.).</p>
-        <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav" target="_blank">nav</a></p>
+        <pre>
+          <code>
+            /* Valeurs de type <display-outside> */
+              display: block;
+              display: inline;
+              display: run-in;
+              
+              /* Valeurs de type <display-inside> */
+              display: flow;
+              display: flow-root;
+              display: table;
+              display: flex;
+              display: grid;
+              display: ruby;
+              
+              /* Combinaison de valeurs */
+              /* <display-outside> et <display-inside> */
+              display: block flow;
+              display: inline table;
+              display: flex run-in;
+              
+              /* Valeurs de type <display-listitem> */
+              display: list-item;
+              display: list-item block;
+              display: list-item inline;
+              display: list-item flow;
+              display: list-item flow-root;
+              display: list-item block flow;
+              display: list-item block flow-root;
+              display: flow list-item block;
+              
+              /* Valeurs de type <display-internal> */
+              display: table-row-group;
+              display: table-header-group;
+              display: table-footer-group;
+              display: table-row;
+              display: table-cell;
+              display: table-column-group;
+              display: table-column;
+              display: table-caption;
+              display: ruby-base;
+              display: ruby-text;
+              display: ruby-base-container;
+              display: ruby-text-container;
+              
+              /* Valeurs de type <display-box> */
+              display: contents;
+              display: none;
+              
+              /* Valeurs de type <display-legacy> */
+              display: inline-block;
+              display: inline-table;
+              display: inline-flex;
+              display: inline-grid;
+              
+              /* Valeurs globales */
+              display: inherit;
+              display: initial;
+              display: unset;              
+          </code>
+        </pre>
 
-        <h5>a</h5>
-        <p>L'élément HTML &lt;a&gt; (pour ancre ou anchor en anglais), avec son attribut href, crée un lien hypertexte vers des pages web, des fichiers, des adresses e-mail, des emplacements se trouvant dans la même page, ou tout ce qu'une URL peut adresser. Le contenu de chaque élément &lt;a&gt; doit indiquer la destination du lien. Si l'attribut href est présent, appuyer sur la touche entrée en se concentrant sur l'élément &lt;a&gt; l'activera.</p>
-        <p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/a" target="_blank">a</a></p>
-
-        <p>lien :<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/body" target="_blank">article_body</a></p>
+        <p>lien :<a href="#">article_display</a></p>
       </article>
 
       <article>
-        <h4 id="list-item-4">div</h4>
-        <p>L'élément HTML &lt;div&gt; (ou division) est le conteneur générique du contenu du flux. Il n'a aucun effet sur le contenu ou la mise en page tant qu'il n'est pas mis en forme d'une manière quelconque à l'aide de CSS.</p>
-        <p>lien :<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/div">article_div</a></p>
+        <h4 id="list-item-5">margin</h4>
+        <p>La propriété <code>margin</code> définit la taille des marges sur les quatre côtés de l'élément. C'est une propriété raccourcie qui permet de manipuler les autres propriétés de marges : <a href="#">margin-top</a>, <a href="#">margin-right</a>, <a href="#">margin-bottom</a> et <a href="#">margin-left</a>.</p>
+        
+        <h5>example css</h5>
+
+        <pre>
+          <code>
+            /* La propriété s'applique aux quatre côtés */
+margin: 1em;
+
+/* vertical | horizontal */
+margin: 5% auto;
+
+/* haut | horizontal | bas */
+margin: 1em auto 2em;
+
+/* haut | droit | bas | gauche */
+margin: 2px 1em 0 auto;
+
+/* Valeurs globales */
+margin: inherit;
+margin: initial;
+margin: unset;
+
+          </code>
+        </pre>
+        
+        <p>lien :<a href="">article_maring</a></p>
       </article>
 
       <article>
-        <h4 id="list-item-5">style</h4>
-        <p>CSS est l'un des langages principaux du Web ouvert et a été standardisé par le W3C. Ce standard évolue sous forme de niveaux (levels), CSS1 est désormais considéré comme obsolète, CSS2.1 correspond à la recommandation et CSS3, qui est découpé en modules plus petits, est en voie de standardisation.</p>
-        <p>lien :<a href="https://developer.mozilla.org/fr/docs/Web/CSS">article_style</a></p>
+        <h4 id="list-item-6">padding</h4>
+        <p>La propriété <a href="#">CSS</a>  background est une <a href="#">propriété raccourcie</a> qui permet de définir les différentes valeurs des propriétés liées à la gestion des arrière-plans d'un élément (couleur, image, origine, taille, répétition, etc.).</p>
+        <p></p>
+        <h5>example de Propriétés</h5>
+        <pre>
+          <code>
+            <ul>
+              <li><a href="#">background-color</a></li>
+              <li><a href="#">background-image</a></li>
+              <li><a href="#">background-position</a></li>
+              <li><a href="#">background-origin</a></li>
+              <li><a href="#">background-repeat</a></li>
+              <li><a href="#">background-size</a></li>
+              <li><a href="#">background-clip</a></li>
+              <li><a href="#">background-attachment</a></li>
+            </ul>
+          </code>
+        </pre>
+        <p>lien :<a href="#" target="_blank">article_background</a></p>
       </article>
       
 

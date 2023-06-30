@@ -237,24 +237,31 @@ margin: unset;
 
       <article>
         <h4 id="list-item-6">padding</h4>
-        <p>La propriété <a href="#">CSS</a>  background est une <a href="#">propriété raccourcie</a> qui permet de définir les différentes valeurs des propriétés liées à la gestion des arrière-plans d'un élément (couleur, image, origine, taille, répétition, etc.).</p>
-        <p></p>
-        <h5>example de Propriétés</h5>
+        <p>La propriété <code>padding</code> est <a href="#">une propriété raccourcie</a> qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément (cf. <a href="#">les boîtes CSS</a>). Elle synthétise <a href="#">padding-top</a>, <a href="#">padding-right</a>, <a href="#">padding-bottom</a>, <a href="#">padding-left</a>.</p>
+
+        <h5>example css</h5>
         <pre>
           <code>
-            <ul>
-              <li><a href="#">background-color</a></li>
-              <li><a href="#">background-image</a></li>
-              <li><a href="#">background-position</a></li>
-              <li><a href="#">background-origin</a></li>
-              <li><a href="#">background-repeat</a></li>
-              <li><a href="#">background-size</a></li>
-              <li><a href="#">background-clip</a></li>
-              <li><a href="#">background-attachment</a></li>
-            </ul>
+/* On applique la même valeur aux quatre côtés */
+padding: 1em;
+
+/* vertical | horizontal */
+padding: 5% 10%;
+
+/* haut | horizontal | bas */
+padding: 1em 2em 2em;
+
+/* haut | droit | bas | gauche */
+padding: 5px 1em 0 2em;
+
+/* Valeurs globales */
+padding: inherit;
+padding: initial;
+padding: unset;
+
           </code>
         </pre>
-        <p>lien :<a href="#" target="_blank">article_background</a></p>
+        <p>lien :<a href="#" target="_blank">article_padding</a></p>
       </article>
       
 
